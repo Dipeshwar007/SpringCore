@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p">
+
+	<bean name="newEmployee" class="com.collection.Employee">
+		<property name="employeeName" value="Gopalam" />
+		<property name="phone">
+			<list>
+				<value>982435252</value>
+				<value>993482330</value>
+				<value>128040184</value>
+			</list>
+		</property>
+
+		<property name="address">
+			<set>
+				<value>Kathmandu</value>
+				<value>Saptari</value>
+			</set>
+		</property>
+		<property name="course">
+			<map>
+				<entry key="Java" value="2months" />
+				<entry key="Python" value="1.5months" />
+			</map>
+		</property>
+
+	</bean>
+
+
+
+
+</beans>
